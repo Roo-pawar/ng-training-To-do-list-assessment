@@ -1,0 +1,76 @@
+/* Page background */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f7fa;
+}
+
+/* New Task button */
+button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #125aa0;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 15px;
+}
+
+/* Table Header */
+th {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Table Cells */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row color */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect */
+tr:hover {
+  background-color: #e6f2ff;
+}
+
+/* Action buttons */
+td button {
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+
+/* Edit button */
+td button:first-child {
+  background-color: #ffa000;
+}
+
+td button:first-child:hover {
+  background-color: #cc7a00;
+}
+
+/* Delete button */
+td button:last-child {
+  background-color: #d32f2f;
+}
+
+td button:last-child:hover {
+  background-color: #9a0007;
+}

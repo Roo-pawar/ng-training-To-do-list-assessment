@@ -1,0 +1,41 @@
+<button (click)="newTask()">New Task</button>
+
+<!-- Show Form -->
+<app-task-form
+  *ngIf="showForm"
+  [task]="selectedTask"
+  (saveTask)="saveTask($event)">
+</app-task-form>
+
+<hr>
+
+<table border="1" cellpadding="10">
+
+<tr>
+  <th>Assigned To</th>
+  <th>Status</th>
+  <th>Due Date</th>
+  <th>Priority</th>
+  <th>Description</th>
+  <th>Action</th>
+</tr>
+
+<tr *ngFor="let task of tasks; let i = index">
+
+  <td>{{task.assignedTo}}</td>
+  <td>{{task.status}}</td>
+  <td>{{task.dueDate}}</td>
+  <td>{{task.priority}}</td>
+  <td>{{task.description}}</td>
+
+  <td>
+
+    <button (click)="editTask(i)">Edit</button>
+
+    <button (click)="deleteTask(i)">Delete</button>
+
+  </td>
+
+</tr>
+
+</table>
